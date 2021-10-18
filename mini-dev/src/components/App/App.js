@@ -1,13 +1,14 @@
-import './style/App.scss';
+import '../../style/App.scss';
 // import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 // import ReduxComponent from './components/reduxComponent/index.js';
 
-import ColorText from '../ColorText';
-import EmailForm from '../Form';
+import ColorText from '../ColorText/ColorText';
+import EmailForm from '../Form/Form';
+import ReduxComponent from '../ReduxComponent/index.js';
 
-import lucasSmall from './images/lucas 500x600.png';
-import lucasMed from './images/lucas 800x960.png';
-import lucasBig from './images/lucas 1200x1440.png';
+// import lucasSmall from '../images/lucas 500x600.png';
+// import lucasMed from '../images/lucas 800x960.png';
+import lucasBig from '../../images/lucas 1200x1440.png';
 
 function App() {
   return (
@@ -25,13 +26,15 @@ function App() {
               Hi! My name is Lucas. I'm a student studying Computer Science at Dartmouth College from Onalaska, Wisconsin.
               I'm interested in website development, circuit design, and software engineering. My favorite color is
               <ColorText class="Teal" text=" teal" />,
-              I have a cat named [Sushi 🍣], and I love to [cook].
+              I have a cat named Sushi 🍣, and I love to cook.
             </p>
             <p className="Body">
               Now that you know a little bit about me, head over to my [project page] to learn more about what I do.
             </p>
             <div className="Body">
               <EmailForm />
+              This is an an example of a redux element:
+              <ReduxComponent/>
             </div>
           </div>
         </div>

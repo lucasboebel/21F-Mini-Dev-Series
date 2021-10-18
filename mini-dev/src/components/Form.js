@@ -1,24 +1,24 @@
-import react, {useState} from "react";
+import react, { useState } from "react";
 
 const EmailForm = (props) => {
     const [email, setEmail] = useState("");
 
     const handleSubmit = (evnt) => {
-        evnt.preventDefault ();
-        console.log (email);
+        evnt.preventDefault();
+        console.log(email);
     }
     return (
         <div>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Want to get in touch? Add your email: 
-                    <input 
-                        type="text" 
-                        value={email} 
+                    Wanna to get in touch? Add your email: 
+                    <input
+                        type="text"
+                        value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" />
             </form>
         </div>
     )
